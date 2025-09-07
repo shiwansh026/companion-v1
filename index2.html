@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompanionV1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="side">Home</a></li>
+                <li><a href="side">Chat</a></li>
+                <li><a href="side">Settings</a></li>
+                <li><a href="side">Help</a></li>
+            </ul>
+            <h3>Sessions</h3>
+            <ul id="session-list">
+                <!-- Chat sessions will be dynamically added here -->
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div id="main-content">
+            <!-- Navigation Bar -->
+            <div id="navbar">
+                <h1>CompanionV1</h1>
+            </div>
+
+            <!-- Chat Section -->
+            <div id="chat-container">
+                <div id="chat-log">
+                    <!-- Chat messages will be dynamically added here -->
+                </div>
+                <div id="input-area">
+                    <button id="mic-button" title="Start Voice Input">
+                        <i class="bi bi-mic"></i>
+                    </button>
+                    <input type="text" id="user-input" placeholder="Type your message here...">
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

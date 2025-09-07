@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompanionV1 AI - Your AI Mental Wellness Companion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Companion Logo" class="logo-img">
+            </div>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index2.html">
+                        <i class="fas fa-comments"></i> Text Chatbot</a>
+                        <a href="index2.html" id="voice-chat-btn"><i class="fas fa-microphone"></i> Voice Chat</a>
+                    </div>
+                </li>
+                <li><a href="#features-section">Features</a></li>
+                <li><a href="#about-section">About Us</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#" id="account-btn">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <img class="img" src="poster.png" alt="poster">
+            <p>Talk, reflect, and track your emotional well-being with our compassionate AI therapist available 24/7 through chat and voice.</p>
+            <div class="hero-buttons">
+                <a href="index2.html" class="btn btn-primary">Start Chatting Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-page" id="features-section" style="padding: 0%;">
+        <div class="container">
+            <div class="section-header">
+                <h1>Features:</h1>
+                <p style="font-size: 30px;" >Discover how CompanionV1 can support your mental health journey</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="featureclass1">
+                    <div class="feature-card">
+                        <i class="fas fa-user-md" style="font-size: 40px; margin-bottom: 10px; display: block;"></i>
+                        <h3>Your Personal Mental Therapist</h3>
+                        <p style="font-size: 20px;">Get access to a dedicated AI-powered therapist who understands your mental health journey and provides continuous, personalized support.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line" style="font-size: 40px; margin-bottom: 10px; display: block;"></i>
+                        <h3>Session Tracking</h3>
+                        <p  style="font-size: 20px;">Seamlessly monitor your therapy sessions with detailed logs and progress insights, helping you stay on track and measure improvement over time.</p>
+                    </div>
+                </div>
+                <div class="featureclass2">
+                    <div class="feature-card">
+                        <i class="fas fa-brain" style="font-size: 40px; margin-bottom: 10px; display: block;"></i>
+                        <h3>Mental Health Enhancement</h3>
+                        <p >Access tools, exercises, and personalized strategies designed to strengthen your mental well-being and build resilience.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-handshake" style="font-size: 40px; margin-bottom: 10px; display: block;"></i>
+                        <h3>Pre-Therapeutic Sessions</h3>
+                        <p>Try a free pre-therapeutic session to explore how therapy works, assess your needs, and get comfortable before starting your full journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about-section">
+        <div class="container">
+            <h1>About CompanionV1</h1>
+            <p style="font-size: 20px;">We're addressing a fundamental human need: mental calmness. Our platform offers a space where you can track your mental state, engage in meaningful sessions, and receive personalized suggestions tailored to your well-being.
+                We also aim to combat loneliness—you're free to talk to our AI therapist anytime and express whatever's on your mind. -
+                CompanionV1 combines cutting-edge technology with therapeutic principles to provide a safe space for your mental well-being.</p>
+        </div>
+    </section>
+
+    <div class="modal" id="account-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="login-section">
+                <h2>Login to MindEase</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                <p style="text-align: center; margin-top: 15px;">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+            </div>
+
+            <div id="signup-section" style="display: none;">
+                <h2>Create an Account</h2>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-confirm">Confirm Password</label>
+                        <input type="password" id="signup-confirm" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Sign Up</button>
+                </form>
+                <p style="text-align: center; margin-top: 15px;">Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CompanionV1 AI</h3>
+                    <p>Your compassionate AI mental wellness companion, available 24/7 to support your emotional well-being.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#features-section">Features</a></li>
+                        <li><a href="#about-section">About Us</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="contact-link" id="contact-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>Email: support@mindease.ai</li>
+                        <li>Phone: (800) 555-1234</li>
+                        <li>Address: 123 Wellness St, San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindEase AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

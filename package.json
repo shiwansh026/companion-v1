@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "name": "wrapper",
+  "version": "1.0.0",
+  "main": "agent.js",
+  "scripts": {
+    "start": "node agent.js"
+  },
+  "keywords": [],
+  "author": "Shiwansh",
+  "license": "ISC",
+  "dependencies": {
+    "@deepgram/sdk": "^3.11.3",
+    "@google-cloud/speech": "^7.0.1",
+    "@google/genai": "^0.7.0",
+    "@google/generative-ai": "^0.24.0",
+    "@humeai/voice-embed": "^0.1.20",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-fileupload": "^1.5.1",
+    "hume": "^0.9.17",
+    "ibm-watson": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.3"
+  },
+  "description": ""
+}

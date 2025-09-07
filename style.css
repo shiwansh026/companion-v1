@@ -1,0 +1,286 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f8; /* Light gray background */
+    color: #333; /* Dark text */
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styling */
+#sidebar {
+    width: 250px;
+    background-color: #477c90;
+    padding: 20px;
+    border-right: 1px solid #427a7c;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#sidebar h2, #sidebar h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #549a9b;
+    border: 1px solid #568d93;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sidebar ul li:hover {
+    background-color: #57889e;
+}
+
+/* Chat container styling */
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    overflow: hidden;
+}
+
+#chat-log {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#input-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#send-button, #mic-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send-button:hover, #mic-button:hover {
+    background-color: #45a049;
+}
+
+#mic-button {
+    background-color: #4caf50; /* Green tone for idle state */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#mic-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+#mic-button:active {
+    background-color: #388e3c; /* Darker green when active */
+    transform: scale(1); /* Reset zoom */
+}
+
+#mic-button.recording {
+    background-color: #f44336; /* Red tone for recording state */
+    animation: pulse 1.5s infinite; /* Pulsing effect */
+}
+
+#mic-button i {
+    font-size: 24px; /* Icon size */
+}
+
+/* Pulsing animation for recording state */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(244, 67, 54, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(244, 67, 54, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(244, 67, 54, 0);
+    }
+}
+/* Input area styling */
+#input-area {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+/* App container */
+#app-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sidebar styling */
+#sidebar {
+    width: 250px;
+    background-color: #689dd9; /* Bluish background */
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 15px 0;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+#main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Navbar styling */
+#navbar {
+    background-color: #ffffff; /* White background */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#navbar h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #5581af; /* Bluish text */
+}
+
+/* Chat container styling */
+#chat-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Chat log styling */
+#chat-log {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f7f7f8; /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between chat bubbles */
+}
+
+/* User message bubble */
+.user-message {
+    align-self: flex-end;
+    background-color: #567fab; /* Bluish bubble */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Bot message bubble */
+.bot-message {
+    align-self: flex-start;
+    background-color: #e6e6e6; /* Light gray bubble */
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input area styling */
+#input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#send-button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #416993;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: #5d80a5;
+}
