@@ -157,18 +157,6 @@ We welcome contributions to CompanionV1! Here's how you can help:
 - Test your changes thoroughly
 - Update documentation as needed
 
-## 📝 License
-
-This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-If you encounter any issues or have questions:
-
-- **Email**: support@mindease.ai
-- **Phone**: (800) 555-1234
-- **Address**: 123 Wellness St, San Francisco, CA
-
 ## ⚠️ Important Notes
 
 ### Mental Health Disclaimer
@@ -196,7 +184,6 @@ CompanionV1 is designed to provide emotional support and should not replace prof
 - **Hume AI** for emotional intelligence and TTS
 - **Open Source Community** for various libraries and tools
 
----
 
 **Made with ❤️ for mental wellness**
 
